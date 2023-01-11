@@ -1,0 +1,15 @@
+.container{
+    height: 18em;
+    margin: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+.container:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+img{
+    height: 14em;
+    width: 14em;
+    border-radius: 15px;
+}
