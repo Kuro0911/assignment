@@ -1,0 +1,29 @@
+.sidebar-container{
+    height: 100vh;
+    background-color: #574FD8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: -10em;
+}
+.text{
+    display: flex;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #9F9BE9;
+    font-size: x-large;
+    margin: 0.5em;
+    font-weight: 600;
+}
+a:hover{
+    text-decoration: underline;
+    color: whitesmoke;
+}

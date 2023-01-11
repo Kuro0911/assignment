@@ -7,9 +7,13 @@ import Sidebar from './components/Sidebar/Sidebar';
 function App() {
   return (
     <div className="App">
-      <Banner/>
-      <Home/>
+      <div className='left'>
       <Sidebar/>
+      </div>
+      <div className='right'>
+        <Banner/>
+        <Home/>
+      </div>
     </div>
   );
 }

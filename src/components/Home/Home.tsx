@@ -2524,19 +2524,7 @@ function Home() {
       "url": "https://www.shazam.com/track/506092951/velvet"
     }
   ]
-  const result = MOCK_DATA.map(function(obj) {
-    return {
-      layout: obj.layout,
-      type: obj.type,
-      key: obj.key,
-      title: obj.title,
-      subtitle: obj.subtitle,
-      images: obj.images,
-      artists:obj.artists, 
-      url: obj.url
-    };
-  });
-  console.log(result);
+
   return (
     <div>
         <Tracks {...MOCK_DATA}/>
