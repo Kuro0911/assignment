@@ -5,7 +5,7 @@ import "./Tracks.css"
 
 const Tracks = (track: TrackSchema[]) => {
     return (
-        <div>
+        <div className='tracks'>
             <div className='title'>
                 <h1>heading</h1>
                 <div className='line'/>

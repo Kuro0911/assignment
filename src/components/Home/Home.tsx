@@ -2528,6 +2528,9 @@ function Home() {
   return (
     <div>
         <Tracks {...MOCK_DATA}/>
+        <Tracks {...MOCK_DATA}/>
+        <Tracks {...MOCK_DATA}/>
+        <Tracks {...MOCK_DATA}/>
     </div>
   );
 }
