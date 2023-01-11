@@ -1,8 +1,11 @@
 import React from 'react'
 import './Banner.css'
+import bannerPng from "../../utils/images/banner.png"
 function Banner() {
   return (
-    <div>Banner</div>
+    <div className='banner-wrapper'>
+      <img className= "banner-img" src={bannerPng} alt=""/>
+    </div>
   )
 }
 

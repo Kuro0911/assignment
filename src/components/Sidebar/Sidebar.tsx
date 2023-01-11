@@ -14,15 +14,15 @@ function Sidebar() {
       </div>
       <div className='text'>
         <Search/>
-        <a href="/">search</a>
+        <a href="/search">search</a>
       </div>
       <div className='text'>
         <Heart/>
-        <a href="/">favourites</a>
+        <a href="/favourites">favourites</a>
       </div>
       <div className='text'>
         <Play/>
-        <a href="/">playlists</a>
+        <a href="/playlists">playlists</a>
       </div>
       </div>
     </div>
