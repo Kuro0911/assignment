@@ -3,6 +3,7 @@
     margin: 1em;
     text-align: center;
     font-weight: bold;
+    z-index: 0;
 }
 .container:hover{
     text-decoration: underline;
@@ -11,5 +12,13 @@
 img{
     height: 14em;
     width: 14em;
+    z-index: 0;
     border-radius: 15px;
+}
+.heart{
+    text-align: right;
+    margin-bottom: -1.5em;
+    margin-right: -0.6em;
+    z-index: 1;
+    position: sticky;
 }

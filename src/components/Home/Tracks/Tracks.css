@@ -1,7 +1,24 @@
-h1{
-    margin-left: 0.5em;
+
+.title{
+    display: flex;
+    align-items: center;
+    margin-bottom: -1.5em;
+    margin-left: 2em;
+}
+h1 {
+    text-transform: capitalize;
+    font-family: monospace;
+    color: grey;
+    margin-right: 0.5em;
+}
+.line{
+    height: 6px;
+    background-color: grey;
+    width: 95%;
+    border-radius: 1em;
 }
 .wrap{
     display: flex;
-    padding: 0.5em;
+    padding-left: 0.5em;
+    overflow-x: scroll;
 }
