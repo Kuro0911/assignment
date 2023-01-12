@@ -1,0 +1,28 @@
+.artist-list-container {
+    padding: 1em;
+}
+
+.artist-list {
+    display: flex;
+    align-items: center;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: lightgray;
+}
+
+.artist-list-img {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    margin-right: 1em;
+    height: 6em;
+    width: 6em;
+}
+
+.artist-list-name {
+    font-size: large;
+    font-weight: bold;
+}
+.artist-list:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

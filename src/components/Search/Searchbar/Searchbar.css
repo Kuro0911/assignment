@@ -1,0 +1,21 @@
+.search-bar {
+    display: flex;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    align-items: center;
+    height: 2.45em;
+    width: 40%;
+    padding-left: 0.5em;
+    outline: auto;
+    margin-bottom: 1.5em;
+}
+input {
+    border-style: hidden;
+    width: 90%;
+    font-size: 1em;
+    margin-left: 0.4em;
+}
+
+.no-outline:focus {
+    outline: none;
+}

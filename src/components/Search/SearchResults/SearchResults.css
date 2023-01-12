@@ -1,0 +1,12 @@
+.search-res-container{
+    display: block;
+}
+.tracks{
+    display: flex;
+}
+.top-res{
+    width: 30%;
+}
+.all-tracks{
+    width: 100%;
+}
