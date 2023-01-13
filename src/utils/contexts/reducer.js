@@ -1,10 +1,12 @@
 export const initialState = {
   user: null,
   fav: [],
+  playlists: [],
 };
 export const actionTypes = {
   SET_USER: "SET_USER",
   UPDATE_FAV: "UPDATE_FAV",
+  ADD_PLAYLIST: "ADD_PLAYLIST",
 };
 
 const reducer = (state, action) => {
@@ -20,7 +22,11 @@ const reducer = (state, action) => {
         ...state,
         fav: action.fav,
       };
-
+    case actionTypes.ADD_PLAYLIST:
+      return {
+        ...state,
+        playlists: action.playlists,
+      };
     default:
       return state;
   }

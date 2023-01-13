@@ -9,6 +9,7 @@ import { useStateValue } from "./utils/contexts/StateProvider";
 import Favourites from "./components/Favourites/Favourites";
 import Login from "./components/Login/Login";
 import { actionTypes } from "./utils/contexts/reducer";
+import Playlists from "./components/Playlists/Playlists";
 function App() {
   const [currState, dispatch] = useStateValue();
   const curr_user = JSON.parse(localStorage.getItem("user")!);
@@ -43,7 +44,7 @@ function App() {
                 />
                 <Route path="/search" element={<Search />} />
                 <Route path="/favourites" element={<Favourites />} />
-                <Route path="/playlists" element={<></>} />
+                <Route path="/playlists" element={<Playlists />} />
               </Routes>
             </Router>
           </div>

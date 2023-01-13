@@ -1,0 +1,15 @@
+.add-new{
+    background-color: lightgray;
+    height: 20vh;
+    width: 10vw;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 1em;
+}
+.add-new-title{
+    font-size: x-large;
+}
