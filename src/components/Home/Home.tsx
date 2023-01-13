@@ -2812,9 +2812,10 @@ function Home() {
 
   return (
     <div>
-      <Tracks {...MOCK_DATA} />
-      <Tracks {...MOCK_DATA} />
-      <Tracks {...MOCK_DATA} />
+      <div className="title">
+        <h1>Top Hits</h1>
+        <div className="line" />
+      </div>
       <Tracks {...MOCK_DATA} />
     </div>
   );

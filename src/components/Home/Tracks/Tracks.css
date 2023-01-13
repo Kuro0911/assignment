@@ -8,16 +8,18 @@
     margin-bottom: -1.5em;
     margin-left: 2em;
 }
+
 h1 {
     text-transform: capitalize;
     font-family: monospace;
     color: grey;
     margin-right: 0.5em;
+    max-width: 30%;
 }
 .line{
     height: 6px;
     background-color: grey;
-    width: 95%;
+    min-width: 90%;
     border-radius: 1em;
 }
 .wrap{

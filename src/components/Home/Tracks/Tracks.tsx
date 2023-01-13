@@ -6,10 +6,6 @@ import "./Tracks.css";
 const Tracks = (track: TrackSchema[]) => {
   return (
     <div className="tracks">
-      <div className="title">
-        <h1>heading</h1>
-        <div className="line" />
-      </div>
       <div className="wrap">
         {Object.keys(track).map((value: string, index: number) => {
           const ele = track[index];

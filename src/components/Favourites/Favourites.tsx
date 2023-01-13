@@ -32,7 +32,7 @@ function Favourites() {
         <div className="no-fav">
           <p>YOU DO NOT HAVE ANY FAVOURITE SONGS</p>
           <h2 className="sub-head">
-            TIP : You can dubble click on a song to add it to favourites
+            TIP : You can double click on a song to add it to favourites
           </h2>
         </div>
       )}
