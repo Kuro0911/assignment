@@ -43,3 +43,6 @@
     width: 85%;
     text-align: left;
 }
+.error {
+    box-shadow: 2px 2px 2px 2px red;
+}

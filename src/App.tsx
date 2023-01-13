@@ -8,8 +8,17 @@ import Search from "./components/Search/Search";
 import { useStateValue } from "./utils/contexts/StateProvider";
 import Favourites from "./components/Favourites/Favourites";
 import Login from "./components/Login/Login";
+import { actionTypes } from "./utils/contexts/reducer";
 function App() {
   const [currState, dispatch] = useStateValue();
+  const curr_user = JSON.parse(localStorage.getItem("user")!);
+  useEffect(() => {
+    dispatch({
+      type: actionTypes.SET_USER,
+      user: curr_user,
+    });
+  }, []);
+
   console.log(currState);
   return (
     <div className="App">
