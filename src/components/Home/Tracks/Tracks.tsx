@@ -2,7 +2,6 @@ import React from "react";
 import TrackSchema from "../../../utils/interfaces/Track";
 import Song from "../Song/Song";
 import "./Tracks.css";
-
 const Tracks = (track: TrackSchema[]) => {
   return (
     <div className="tracks">

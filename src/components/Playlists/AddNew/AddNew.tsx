@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import Add from "../../../utils/svg/Add";
 import "./AddNew.css";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { TextField } from "@mui/material";
-import Tracks from "../../Home/Tracks/Tracks";
+import AddNewTracks from "./AddNewTracks/AddNewTracks";
 
 function AddNew() {
   const style = {
@@ -2835,7 +2833,9 @@ function AddNew() {
     <>
       <div className="add-new" onClick={handleOpen}>
         <Add />
-        <h1 className="add-new-title">Create New PlayList</h1>
+        <div className="add-new-title">
+          <span className="add-new-title-text">Create New PlayList</span>
+        </div>
       </div>
       <Modal
         open={open}
@@ -2844,17 +2844,7 @@ function AddNew() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <TextField
-            id="outlined-basic"
-            label="Title"
-            variant="outlined"
-            fullWidth
-          />
-          <div className="title">
-            <h1>Select Tracks</h1>
-            <div className="line" />
-          </div>
-          <Tracks {...MOCK_DATA} />
+          <AddNewTracks close={handleClose} data={MOCK_DATA} />
         </Box>
       </Modal>
     </>
