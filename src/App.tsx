@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import Banner from './components/Banner/Banner';
 import Home from './components/Home/Home';
@@ -7,9 +7,20 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Search from './components/Search/Search';
 import { useStateValue } from './utils/contexts/StateProvider';
 import Favourites from './components/Favourites/Favourites';
+import { actionTypes } from './utils/contexts/reducer';
 function App() {
   const [currState,dispatch] = useStateValue();
   console.log(currState);
+  // useEffect(() => {
+  //     const data = JSON.parse(localStorage.getItem('fav')!);
+  //     if(data){
+  //       dispatch({
+  //         type: actionTypes.UPDATE_FAV,
+  //         fav: data,
+  //       });
+  //     }
+  // })
+  
   return (
     <div className="App">
       <div className='left'>
