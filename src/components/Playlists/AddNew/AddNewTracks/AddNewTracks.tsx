@@ -2,7 +2,6 @@ import { TextField } from "@mui/material";
 import React, { useState } from "react";
 import { actionTypes } from "../../../../utils/contexts/reducer";
 import { useStateValue } from "../../../../utils/contexts/StateProvider";
-import SongSchema from "../../../../utils/interfaces/Song";
 import TrackSchema from "../../../../utils/interfaces/Track";
 import AddNewSong from "./AddNewSong";
 interface AddNewTracksSchema {

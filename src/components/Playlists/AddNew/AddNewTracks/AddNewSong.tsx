@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import SongSchema from "../../../../utils/interfaces/Song";
 import TrackSchema from "../../../../utils/interfaces/Track";
 import "./AddNewSong.css";
 
@@ -15,13 +14,10 @@ const AddNewSong = ({ addToList = () => {}, data }: AddNewSongSchema) => {
       addToList(data);
     }
   };
+  const cover = data.images !== undefined ? data.images.coverart : "";
   return (
     <div className="container" onClick={handleClick}>
-      <img
-        src={data.images.coverart}
-        alt=""
-        className={`${disable ? "disable" : ""}`}
-      />
+      <img src={cover} alt="" className={`${disable ? "disable" : ""}`} />
       <span>{data.title}</span>
     </div>
   );

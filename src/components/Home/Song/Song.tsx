@@ -37,11 +37,11 @@ const Song = (data: SongSchema) => {
       fav: new_data,
     });
   };
-
+  const cover = data.img !== undefined ? data.img.coverart : "";
   return (
     <div className="container" onDoubleClick={handleClick}>
       <Heart hidden={!liked} />
-      <img src={data.img.coverart} alt="" />
+      <img src={cover} alt="" />
       <span>{data.title}</span>
     </div>
   );
