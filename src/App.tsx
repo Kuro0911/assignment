@@ -18,7 +18,7 @@ function App() {
       type: actionTypes.SET_USER,
       user: curr_user,
     });
-  }, []);
+  }, [curr_user, dispatch]);
 
   return (
     <div className="App">
