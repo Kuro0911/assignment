@@ -6,7 +6,6 @@ import "./Playlists.css";
 
 function Playlists() {
   const [data, dispatch] = useStateValue();
-  console.log(data.playlists);
   return (
     <div className="playlist-wrapper">
       <List {...data.playlists} />

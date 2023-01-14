@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import getData from "../../data/Api";
+import getData from "../../data/getData";
 import Loader from "../Loader/Loader";
 import "./Home.css";
 import Tracks from "./Tracks/Tracks";
@@ -10,7 +10,6 @@ function Home() {
   useEffect(() => {
     getData(0)
       .then((res) => {
-        console.log(res);
         setData1(res);
       })
       .catch((err) => {
@@ -18,7 +17,6 @@ function Home() {
       });
     getData(21)
       .then((res) => {
-        console.log(res);
         setData2(res);
       })
       .catch((err) => {

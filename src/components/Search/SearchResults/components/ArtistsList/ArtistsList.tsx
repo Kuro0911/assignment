@@ -3,7 +3,6 @@ import ArtistsSchema from "../../../../../utils/interfaces/Artists";
 import "./ArtistsList.css";
 
 function ArtistsList(data: ArtistsSchema) {
-  console.log(data);
   return (
     <div className="artist-list-container">
       <h1>Artists</h1>

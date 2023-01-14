@@ -4,7 +4,7 @@ import "./AddNew.css";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import AddNewTracks from "./AddNewTracks/AddNewTracks";
-import getData from "../../../data/Api";
+import getData from "../../../data/getData";
 import Loader from "../../Loader/Loader";
 
 function AddNew() {

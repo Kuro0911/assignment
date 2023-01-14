@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import Search from "../../../utils/svg/Search";
 import "./Searchbar.css";
 
-function Searchbar() {
+interface SearchbarSchema {
+  queryChange: (q: string) => void;
+}
+function Searchbar({ queryChange }: SearchbarSchema) {
   const [query, setQuery] = useState("");
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(e.target.value);
-    console.log(query);
+    queryChange(e.target.value);
   };
   return (
     <div className="search-bar">

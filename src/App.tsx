@@ -20,7 +20,6 @@ function App() {
     });
   }, []);
 
-  console.log(currState);
   return (
     <div className="App">
       {!currState.user ? (
