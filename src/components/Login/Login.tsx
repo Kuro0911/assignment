@@ -17,6 +17,7 @@ function Login() {
     setData({ ...data, password: e.target.value });
   };
   const [user, dispatch] = useStateValue();
+  console.log(user);
   const handleLogin = () => {
     if (data.username !== "" && data.password !== "") {
       localStorage.setItem("user", JSON.stringify(data));
