@@ -13,11 +13,16 @@ import Playlists from "./components/Playlists/Playlists";
 function App() {
   const [currState, dispatch] = useStateValue();
   const curr_user = JSON.parse(localStorage.getItem("user")!);
+
   useEffect(() => {
-    dispatch({
-      type: actionTypes.SET_USER,
-      user: curr_user,
-    });
+    if (currState.user.username !== curr_user.username) {
+      dispatch({
+        type: actionTypes.SET_USER,
+        user: curr_user,
+      });
+    }
+    console.warn(currState.user.username);
+    console.warn(curr_user.username);
   }, [curr_user, dispatch]);
 
   return (
